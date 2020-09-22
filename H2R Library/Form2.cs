@@ -22,22 +22,6 @@ namespace H2R_Library
             runQuery();
         }
 
-        private void runQuery() {
-            string query = textBox1.Text;
-            string MysqlConnectionstring = "datasource = 127.0.0.1;port=3306;username=root;password=mysql;database=hp";
-
-            MySqlConnection connection = new MySqlConnection(MysqlConnectionstring);
-            MySqlCommand commandDatabase = new MySqlCommand(query, connection);
-
-            try
-            {
-                connection.Open();
-                MySqlDataReader reader = commandDatabase.ExecuteReader();
-            }
-            catch (Exception e){
-                MessageBox.Show(e.Message);
-            }
-
-        }
+       
     }
 }

@@ -25,3 +25,30 @@ C:\Users\patel\source\repos\H2R Library\H2R Library\obj\Debug\H2R Library.exe.co
 C:\Users\patel\source\repos\H2R Library\H2R Library\obj\Debug\H2R_Library.Form2.resources
 C:\Users\patel\source\repos\H2R Library\H2R Library\obj\Debug\H2R Library.csproj.CopyComplete
 C:\Users\patel\source\repos\H2R Library\H2R Library\obj\Debug\H2R_Library.Form3.resources
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\H2R Library.exe.config
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\H2R Library.exe
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\H2R Library.pdb
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\MySql.Data.dll
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\Google.Protobuf.dll
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\Zstandard.Net.dll
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\Renci.SshNet.dll
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\System.Buffers.dll
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\System.Memory.dll
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\MySql.Data.xml
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Library.csprojAssemblyReference.cache
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Library.exe.config
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R_Library.Form1.resources
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R_Library.Form2.resources
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R_Library.Form3.resources
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R_Library.Properties.Resources.resources
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Library.csproj.GenerateResource.cache
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Library.csproj.CoreCompileInputs.cache
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Library.csproj.CopyComplete
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Library.exe
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Library.pdb
