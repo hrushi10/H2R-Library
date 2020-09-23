@@ -68,7 +68,7 @@
             this.rad_std.AutoSize = true;
             this.rad_std.Location = new System.Drawing.Point(7, 83);
             this.rad_std.Name = "rad_std";
-            this.rad_std.Size = new System.Drawing.Size(98, 22);
+            this.rad_std.Size = new System.Drawing.Size(69, 17);
             this.rad_std.TabIndex = 4;
             this.rad_std.TabStop = true;
             this.rad_std.Text = "Student";
@@ -79,7 +79,7 @@
             this.rad_lib.AutoSize = true;
             this.rad_lib.Location = new System.Drawing.Point(7, 44);
             this.rad_lib.Name = "rad_lib";
-            this.rad_lib.Size = new System.Drawing.Size(186, 22);
+            this.rad_lib.Size = new System.Drawing.Size(127, 17);
             this.rad_lib.TabIndex = 5;
             this.rad_lib.TabStop = true;
             this.rad_lib.Text = "Librarian Manager";
@@ -108,9 +108,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(42, 257);
+            this.label5.Location = new System.Drawing.Point(88, 260);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(174, 18);
+            this.label5.Size = new System.Drawing.Size(115, 13);
             this.label5.TabIndex = 13;
             this.label5.Text = "Confirm Password :";
             // 
@@ -145,7 +145,7 @@
             // 
             this.txt_name.Location = new System.Drawing.Point(231, 112);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(147, 23);
+            this.txt_name.Size = new System.Drawing.Size(147, 19);
             this.txt_name.TabIndex = 5;
             // 
             // txt_cpass
@@ -153,21 +153,21 @@
             this.txt_cpass.Location = new System.Drawing.Point(231, 254);
             this.txt_cpass.Name = "txt_cpass";
             this.txt_cpass.PasswordChar = '*';
-            this.txt_cpass.Size = new System.Drawing.Size(147, 23);
+            this.txt_cpass.Size = new System.Drawing.Size(147, 19);
             this.txt_cpass.TabIndex = 4;
             // 
             // txt_id
             // 
             this.txt_id.Location = new System.Drawing.Point(231, 46);
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(147, 23);
+            this.txt_id.Size = new System.Drawing.Size(147, 19);
             this.txt_id.TabIndex = 2;
             // 
             // signup
             // 
             this.signup.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.signup.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.signup.Location = new System.Drawing.Point(500, 219);
+            this.signup.Location = new System.Drawing.Point(491, 216);
             this.signup.Name = "signup";
             this.signup.Size = new System.Drawing.Size(119, 57);
             this.signup.TabIndex = 0;
@@ -180,17 +180,17 @@
             this.txt_pass.Location = new System.Drawing.Point(231, 183);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.PasswordChar = '*';
-            this.txt_pass.Size = new System.Drawing.Size(147, 23);
+            this.txt_pass.Size = new System.Drawing.Size(147, 19);
             this.txt_pass.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monoton", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.GreenYellow;
             this.label1.Location = new System.Drawing.Point(448, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 62);
+            this.label1.Size = new System.Drawing.Size(150, 37);
             this.label1.TabIndex = 10;
             this.label1.Text = "Sign - Up";
             // 
@@ -220,18 +220,18 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat Subrayada", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(534, 606);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 33);
+            this.label6.Size = new System.Drawing.Size(47, 26);
             this.label6.TabIndex = 13;
             this.label6.Text = "OR";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1059, 756);
@@ -240,7 +240,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Font = new System.Drawing.Font("Montserrat Subrayada", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);

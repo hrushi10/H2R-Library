@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace H2R_Library
 {
-    public partial class HomePage : Form
+    public partial class catalogue : Form
     {
-        public HomePage()
+        public catalogue()
         {
             InitializeComponent();
-        }
-
-        private void HomePage_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'h2rlibDataSet.users' table. You can move, or remove it, as needed.
-            this.usersTableAdapter.Fill(this.h2rlibDataSet.users);
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -29,7 +22,22 @@ namespace H2R_Library
 
         }
 
+        private void usersBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
