@@ -44,7 +44,6 @@ C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\MySql.Dat
 C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Library.csprojAssemblyReference.cache
 C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Library.exe.config
 C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R_Library.Form1.resources
-C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R_Library.Form2.resources
 C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R_Library.Form3.resources
 C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R_Library.Properties.Resources.resources
 C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Library.csproj.GenerateResource.cache
@@ -55,3 +54,4 @@ C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Libra
 C:\Users\haril\Source\Repos\hrushi10\H2R-Library\H2R Library\bin\Debug\H2R Library.exe.config
 C:\Users\haril\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Library.exe
 C:\Users\haril\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R Library.pdb
+C:\Users\patel\Source\Repos\hrushi10\H2R-Library\H2R Library\obj\Debug\H2R_Library.HomePage.resources
