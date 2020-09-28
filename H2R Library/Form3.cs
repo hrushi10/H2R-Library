@@ -19,59 +19,107 @@ namespace H2R_Library
 
         private void signup_Click(object sender, EventArgs e)
         {
-            
-            runQuery();
-            MessageBox.Show("Sign Up Successfull");
+
+            SqlDb db = new SqlDb();
+            MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`Username`, `Name`, `Email-Id`,`Password`,`Admin Id`) VALUES (@usn, @nam, @email, @pass,@Adi)", db.getConnection());
+
+            command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = Username.Text;
+            command.Parameters.Add("@nam", MySqlDbType.VarChar).Value = NameU.Text;
+            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = Password.Text;
+            command.Parameters.Add("@Adi", MySqlDbType.VarChar).Value = AdiD.Text;
+
+            db.openConnection();
+            if (!checkTextBoxesValues())
+            {
+                if (Password.Text.Equals(PasswordConf.Text))
+                {
+                    if (checkUsername())
+                    {
+                        MessageBox.Show("This Username Already Exists, Select A Different One", "Duplicate Username", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                    }
+                    else
+
+                    {
+                        if (command.ExecuteNonQuery() == 1)
+                        {
+                            MessageBox.Show("Your Account Has Been Created", "Account Created", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
+                            Form1 log = new Form1();
+                            log.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("ERROR");
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Confirmation Password", "Password Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Enter Your Informations First", "Empty Data", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+
+
+
+            db.closeConnection();
+
         }
 
-        private void runQuery()
+        public Boolean checkUsername()
         {
-            string ids = txt_id.Text;
-            int id = Int32.Parse(ids);
-            string name = txt_name.Text;
-            string pass = txt_pass.Text;
-            string cpass = txt_cpass.Text;
-            string type = null;
-            
+            SqlDb db = new SqlDb();
 
-            if (rad_std.Checked == true)
+            String username = Username.Text;
+
+            DataTable table = new DataTable();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `username` = @usn", db.getConnection());
+
+            command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = username;
+
+            adapter.SelectCommand = command;
+
+            adapter.Fill(table);
+
+
+            if (table.Rows.Count > 0)
             {
-                type = "student";
-                signup.Enabled = true;
+                return true;
             }
-            else if (rad_lib.Checked == true)
+            else
             {
-                type = "Librarian";
-                signup.Enabled = true;
+                return false;
             }
 
-            if (pass == cpass)
-            {
-
-                string query = ("insert into users values("+id+",'" + name + "','" + pass + "','" + type + "')");
-                string MysqlConnectionstring = "datasource = 127.0.0.1;port=3306;username=root;password=mysql;database=h2rLib";
-
-                MySqlConnection connection = new MySqlConnection(MysqlConnectionstring);
-                MySqlCommand commandDatabase = new MySqlCommand(query, connection);
-
-                try
-                {
-                    connection.Open();
-                    MySqlDataReader reader = commandDatabase.ExecuteReader();
-                }
-                catch (Exception e)
-                {
-                    MessageBox.Show(e.Message);
-                }
-
-            } else 
-            if(rad_lib.Checked == false && rad_std.Checked == false) {
-                MessageBox.Show("Select a User Type");
-            }
-            else {
-                MessageBox.Show("Password and confirm Password does not match !!");
-            }
         }
+        public Boolean checkTextBoxesValues()
+        {
+            String fname = NameU.Text;
+            String Uname = Username.Text;
+            String uname = AdiD.Text;
+            String pass = Password.Text;
+
+            if (fname.Trim().Equals("") || Uname.Trim().Equals("")
+                 || pass.Trim().Equals(""))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+
+
 
         private void Form3_Load(object sender, EventArgs e)
         {
@@ -84,5 +132,115 @@ namespace H2R_Library
             form.Show();
             Visible = false;
         }
+
+        private void rad_lib_CheckedChanged(object sender, EventArgs e)
+        {
+            AdiD.Visible = true;
+            Adl.Visible = true;
+        }
+
+        private void rad_std_CheckedChanged(object sender, EventArgs e)
+        {
+            AdiD.Visible = false;
+            Adl.Visible = false;
+        }
+        private void NameU_Enter(object sender, EventArgs e)
+        {
+            string Uname = NameU.Text;
+            if (Uname.ToLower().Trim().Equals("Name"))
+            {
+                NameU.Text = "";
+                NameU.ForeColor = Color.Black;
+            }
+        }
+        private void NameU_Leave(object sender, EventArgs e)
+        {
+            String Uname = NameU.Text;
+            if (Uname.ToLower().Trim().Equals("Uname") || Uname.Trim().Equals(""))
+            {
+                NameU.Text = "first name";
+                NameU.ForeColor = Color.Gray;
+            }
+        }
+        private void Username_Enter(object sender, EventArgs e)
+        {
+            String Usrname = Username.Text;
+            if (Usrname.ToLower().Trim().Equals("last name"))
+            {
+                Username.Text = "";
+                Username.ForeColor = Color.Black;
+            }
+        }
+        private void Username_Leave(object sender, EventArgs e)
+        {
+            String Usrname = Username.Text;
+            if (Usrname.ToLower().Trim().Equals("User name") || Usrname.Trim().Equals(""))
+            {
+                Username.Text = "User name";
+                Username.ForeColor = Color.Gray;
+            }
+        }
+        private void AdiD_Enter(object sender, EventArgs e)
+        {
+            String username = AdiD.Text;
+            if (username.ToLower().Trim().Equals("Admin Id"))
+            {
+                AdiD.Text = "";
+                AdiD.ForeColor = Color.Black;
+            }
+        }
+        private void AdiD_Leave(object sender, EventArgs e)
+        {
+            String username = AdiD.Text;
+            if (username.ToLower().Trim().Equals("Admin Id") || username.Trim().Equals(""))
+            {
+                AdiD.Text = "Admin Id";
+                AdiD.ForeColor = Color.Gray;
+            }
+        }
+        private void Password_Enter(object sender, EventArgs e)
+        {
+            String pass = Password.Text;
+            if (pass.ToLower().Trim().Equals("password"))
+            {
+                Password.Text = "";
+                Password.UseSystemPasswordChar = true;
+                Password.ForeColor = Color.Black;
+            }
+        }
+        private void Password_Leave(object sender, EventArgs e)
+        {
+            String pass = Password.Text;
+            if (pass.ToLower().Trim().Equals("password") || pass.Trim().Equals(""))
+            {
+                Password.Text = "password";
+                Password.UseSystemPasswordChar = false;
+                Password.ForeColor = Color.Gray;
+            }
+        }
+        private void PasswordConf_Enter(object sender, EventArgs e)
+        {
+            String cpassword = PasswordConf.Text;
+            if (cpassword.ToLower().Trim().Equals("confirm password"))
+            {
+                PasswordConf.Text = "";
+                PasswordConf.UseSystemPasswordChar = true;
+                PasswordConf.ForeColor = Color.Black;
+            }
+        }
+        private void PasswordConf_Leave(object sender, EventArgs e)
+        {
+            String cpassword = PasswordConf.Text;
+            if (cpassword.ToLower().Trim().Equals("confirm password") ||
+                cpassword.ToLower().Trim().Equals("password") ||
+                cpassword.Trim().Equals(""))
+            {
+                PasswordConf.Text = "confirm password";
+                PasswordConf.UseSystemPasswordChar = false;
+                PasswordConf.ForeColor = Color.Gray;
+            }
+
+        }
     }
 }
+
