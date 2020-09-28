@@ -21,7 +21,7 @@ namespace H2R_Library
         {
 
             SqlDb db = new SqlDb();
-            MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`Username`, `Name`, `Email-Id`,`Password`,`Admin Id`) VALUES (@usn, @nam, @email, @pass,@Adi)", db.getConnection());
+            MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`Username`,`Name`,`Password`,`Admin Id`) VALUES (@usn,@nam,@pass,@Adi)", db.getConnection());
 
             command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = Username.Text;
             command.Parameters.Add("@nam", MySqlDbType.VarChar).Value = NameU.Text;
@@ -165,7 +165,7 @@ namespace H2R_Library
         private void Username_Enter(object sender, EventArgs e)
         {
             String Usrname = Username.Text;
-            if (Usrname.ToLower().Trim().Equals("last name"))
+            if (Usrname.ToLower().Trim().Equals("User name"))
             {
                 Username.Text = "";
                 Username.ForeColor = Color.Black;

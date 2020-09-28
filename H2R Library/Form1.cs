@@ -62,7 +62,6 @@ namespace H2R_Library
                     {
                         MessageBox.Show("Enter Your Username To Login", "Empty Username", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                    // check if the password field is empty
                     else if (Password.Trim().Equals(""))
                     {
                         MessageBox.Show("Enter Your Password To Login", "Empty Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -100,7 +99,8 @@ namespace H2R_Library
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
         {
             textBoxAdminID.Visible = true;
-            
+            Adl.Visible = true;
+
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)

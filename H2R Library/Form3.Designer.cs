@@ -33,6 +33,8 @@
             this.rad_std = new System.Windows.Forms.RadioButton();
             this.rad_lib = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Adl = new System.Windows.Forms.Label();
+            this.AdiD = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,8 +48,6 @@
             this.login = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.AdiD = new System.Windows.Forms.TextBox();
-            this.Adl = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,17 +104,34 @@
             this.groupBox1.Controls.Add(this.signup);
             this.groupBox1.Controls.Add(this.Password);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox1.Location = new System.Drawing.Point(237, 189);
+            this.groupBox1.Location = new System.Drawing.Point(233, 127);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(669, 374);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sign Up";
             // 
+            // Adl
+            // 
+            this.Adl.AutoSize = true;
+            this.Adl.Location = new System.Drawing.Point(113, 317);
+            this.Adl.Name = "Adl";
+            this.Adl.Size = new System.Drawing.Size(90, 20);
+            this.Adl.TabIndex = 15;
+            this.Adl.Text = "Admin Id :";
+            this.Adl.Visible = false;
+            // 
+            // AdiD
+            // 
+            this.AdiD.Location = new System.Drawing.Point(231, 317);
+            this.AdiD.Name = "AdiD";
+            this.AdiD.Size = new System.Drawing.Size(147, 25);
+            this.AdiD.TabIndex = 14;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(40, 257);
+            this.label5.Location = new System.Drawing.Point(93, 257);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(163, 20);
             this.label5.TabIndex = 13;
@@ -194,7 +211,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.GreenYellow;
-            this.label1.Location = new System.Drawing.Point(448, 92);
+            this.label1.Location = new System.Drawing.Point(442, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(224, 55);
             this.label1.TabIndex = 10;
@@ -205,7 +222,7 @@
             this.login.BackColor = System.Drawing.SystemColors.HotTrack;
             this.login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.login.Location = new System.Drawing.Point(501, 664);
+            this.login.Location = new System.Drawing.Point(492, 585);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(119, 57);
             this.login.TabIndex = 12;
@@ -218,7 +235,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(534, 606);
+            this.label6.Location = new System.Drawing.Point(523, 531);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 38);
             this.label6.TabIndex = 13;
@@ -234,23 +251,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
-            // 
-            // AdiD
-            // 
-            this.AdiD.Location = new System.Drawing.Point(231, 317);
-            this.AdiD.Name = "AdiD";
-            this.AdiD.Size = new System.Drawing.Size(147, 25);
-            this.AdiD.TabIndex = 14;
-            // 
-            // Adl
-            // 
-            this.Adl.AutoSize = true;
-            this.Adl.Location = new System.Drawing.Point(113, 317);
-            this.Adl.Name = "Adl";
-            this.Adl.Size = new System.Drawing.Size(90, 20);
-            this.Adl.TabIndex = 15;
-            this.Adl.Text = "Admin Id :";
-            this.Adl.Visible = false;
             // 
             // Form3
             // 
