@@ -48,6 +48,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Rules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rules.Designer.cs">
+      <DependentUpon>Rules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\Catalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\Catalog.Designer.cs">
+      <DependentUpon>Catalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\Details.Designer.cs">
+      <DependentUpon>Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,22 +83,54 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>h2rlibDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="HomePage.cs">
+    <Compile Include="h2rlibDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>h2rlibDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Librian\HomeLib.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomePage.Designer.cs">
+    <Compile Include="Librian\HomeLib.Designer.cs">
+      <DependentUpon>HomeLib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\HomePage.Designer.cs">
       <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Rules.resx">
+      <DependentUpon>Rules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\Catalog.resx">
+      <DependentUpon>Catalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\Details.resx">
+      <DependentUpon>Details.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomePage.resx">
+    <EmbeddedResource Include="Librian\HomeLib.resx">
+      <DependentUpon>HomeLib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,6 +152,17 @@
     </None>
     <None Include="h2rlibDataSet.xss">
       <DependentUpon>h2rlibDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="h2rlibDataSet1.xsc">
+      <DependentUpon>h2rlibDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="h2rlibDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>h2rlibDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="h2rlibDataSet1.xss">
+      <DependentUpon>h2rlibDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

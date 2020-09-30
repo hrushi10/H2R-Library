@@ -33,5 +33,15 @@ namespace H2R_Library.Properties {
                 return ((string)(this["h2rlibConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=127.0.0.1;user id=root;password=mysql;database=h2rlib")]
+        public string table2 {
+            get {
+                return ((string)(this["table2"]));
+            }
+        }
     }
 }
