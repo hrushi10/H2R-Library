@@ -20,9 +20,9 @@ namespace H2R_Library
         private void HomePage_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'h2rlibDataSet1.users' table. You can move, or remove it, as needed.
-            this.usersTableAdapter1.Fill(this.h2rlibDataSet1.users);
+            
             // TODO: This line of code loads data into the 'h2rlibDataSet.users' table. You can move, or remove it, as needed.
-            this.usersTableAdapter.Fill(this.h2rlibDataSet.users);
+           
 
         }
 
